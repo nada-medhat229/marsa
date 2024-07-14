@@ -52,8 +52,9 @@ onBeforeMount(() => {
         </div>
         <v-row class="py-5 justify-space-between align-center">
           <v-col
-            cols="12"
+            cols="2"
             md="3"
+            class="text-center"
           >
           <div class="filter">
             Filters
@@ -61,8 +62,9 @@ onBeforeMount(() => {
           </div>
           </v-col>
           <v-col
-            cols="12"
+            cols="6"
             md="6"
+            class="text-center"
           >
           <div class="searchbar rounded border outline-0 d-flex align-center justify-space-between px-3">
             <input
@@ -78,8 +80,9 @@ onBeforeMount(() => {
           </div>
           </v-col>
           <v-col
-            cols="12"
+            cols="4"
             md="3"
+            class="text-center"
           >
           
           <button class="clear-btn" @click="resetFilters()">
@@ -95,6 +98,7 @@ onBeforeMount(() => {
         <v-row>
           <v-col
             cols="12"
+            sm="6"
             md="3"
             v-for="(trip, index) in tourStore.filteredTours"
             :key="index"

@@ -3,7 +3,7 @@
       <Header />
       <v-container>
         <v-row class="detail py-5 my-3">
-          <v-col cols="8">
+          <v-col cols="12" md="8">
             <v-img :src="mainImage" class="main-image" cover></v-img>
             <div class="d-flex flex-nowrap overflow-x-scroll">
               <v-col cols="3" v-for="(image, index) in images" :key="index">
@@ -45,7 +45,7 @@
               </p>
             </div>
           </v-col>
-          <v-col cols="4">
+          <v-col cols="12" md="4">
             <v-card class="mx-auto">
               <v-card-title class="actionbtn text-white mt-0 mb-5 text-center">
                 Check Availability

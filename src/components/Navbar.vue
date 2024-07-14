@@ -105,7 +105,7 @@ const showMenu=ref(false)
             a{
                 color: #000;
                 @media only screen and (max-width:800px){
-                    color: #fff;
+                    color: #fff !important;
                 }
             }
         }
@@ -132,6 +132,7 @@ const showMenu=ref(false)
                 @media only screen and (max-width:800px){
                     display: block;
                     width: 100%;
+                    color: #000 !important;
                 }
             }
         }
