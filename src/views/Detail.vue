@@ -152,12 +152,12 @@
   import { ref } from "vue";
   const menu = ref(false);
   import Header from "../components/Header.vue";
-  import mainImg from "../assets/images/trip1.jpg";
-  import img1 from "../assets/images/trip1.jpg";
-  import img2 from "../assets/images/trip2.jpg";
-  import img3 from "../assets/images/trip3.jpg";
-  import img4 from "../assets/images/city4.jpeg";
-  import img5 from "../assets/images/city3.jpeg";
+  import mainImg from "@/assets/images/trip1.jpg";
+  import img1 from "@/assets/images/trip1.jpg";
+  import img2 from "@/assets/images/trip2.jpg";
+  import img3 from "@/assets/images/trip3.jpg";
+  import img4 from "@/assets/images/city4.jpeg";
+  import img5 from "@/assets/images/city3.jpeg";
   const mainImage = ref(mainImg);
   const images = ref([img1, img2, img3, img4, img5]);
   const form = ref({

@@ -31,19 +31,19 @@ export default {
       trips: [
         {
           name: "Green islands, Indonesia",
-          image: "src/assets/images/trip1.jpg",
+          image: "@/assets/images/trip1.jpg",
           price: "700$",
           date: "June 1",
         },
         {
           name: "Caribbean island of Grenada",
-          image: "src/assets/images/trip2.jpg",
+          image: "@/assets/images/trip2.jpg",
           price: "850$",
           date: "June 1",
         },
         {
           name: "Costa Brava, Spain",
-          image: "src/assets/images/trip3.jpg",
+          image: "@/assets/images/trip3.jpg",
           price: "800$",
           date: "August 10",
         },
