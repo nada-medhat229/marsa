@@ -1,5 +1,8 @@
 import { defineStore } from 'pinia'
-
+import image1 from "../assets/images/trip1.jpg";
+import image2 from "../assets/images/trip2.jpg";
+import image3 from "../assets/images/trip3.jpg";
+import image4 from "../assets/images/tour1.jpg"
 export const useTourStore = defineStore('tourStore',{
     state : ()=>({
         searchKey:'',
@@ -8,7 +11,7 @@ export const useTourStore = defineStore('tourStore',{
             {
                 id:1,
                 title:'Tour 1',
-                imgUrl:'src/assets/images/trip1.jpg',
+                imgUrl:image1,
                 category:'c1',
                 duration:6,
                 destinations:['Snorkeling', 'Sunset viewing'],
@@ -18,7 +21,7 @@ export const useTourStore = defineStore('tourStore',{
             {
                 id:2,
                 title:'Tour 2',
-                imgUrl:'src/assets/images/trip2.jpg',
+                imgUrl:image2,
                 category:'c2',
                 duration:6,
                 destinations:['Sunset viewing'],
@@ -28,7 +31,7 @@ export const useTourStore = defineStore('tourStore',{
             {
                 id:3,
                 title:'Tour 3',
-                imgUrl:'src/assets/images/trip3.jpg',
+                imgUrl:image3,
                 category:'c1',
                 duration:6,
                 destinations:['Snorkeling', 'Sunset viewing'],
@@ -38,7 +41,7 @@ export const useTourStore = defineStore('tourStore',{
             {
                 id:4,
                 title:'Tour 4',
-                imgUrl:'src/assets/images/tour1.jpg',
+                imgUrl:image4,
                 category:'c3',
                 duration:6,
                 destinations:['Snorkeling', 'Sunset viewing', 'Skardu'],
@@ -49,7 +52,7 @@ export const useTourStore = defineStore('tourStore',{
             {
                 id:5,
                 title:'Tour 5',
-                imgUrl:'src/assets/images/trip1.jpg',
+                imgUrl:image1,
                 category:'c1',
                 duration:6,
                 destinations:['Snorkeling', 'Sunset viewing'],

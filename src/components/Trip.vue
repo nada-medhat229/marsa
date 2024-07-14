@@ -25,25 +25,29 @@
 </template>
 
 <script>
+import image1 from "../assets/images/trip1.jpg";
+import image2 from "../assets/images/trip2.jpg";
+import image3 from "../assets/images/trip3.jpg";
+
 export default {
   data() {
     return {
       trips: [
         {
           name: "Green islands, Indonesia",
-          image: "@/assets/images/trip1.jpg",
+          image: image1,
           price: "700$",
           date: "June 1",
         },
         {
           name: "Caribbean island of Grenada",
-          image: "@/assets/images/trip2.jpg",
+          image: image2,
           price: "850$",
           date: "June 1",
         },
         {
           name: "Costa Brava, Spain",
-          image: "@/assets/images/trip3.jpg",
+          image: image3,
           price: "800$",
           date: "August 10",
         },
