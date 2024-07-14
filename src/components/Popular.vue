@@ -24,16 +24,23 @@
 </template>
 
 <script>
+import image1 from "../assets/images/cit.jpg";
+import image2 from "../assets/images/city2.jpeg";
+import image3 from "../assets/images/city3.jpeg";
+import image4 from "../assets/images/city4.jpeg";
+import image5 from "../assets/images/city5.jpeg";
+import image6 from "../assets/images/city6.jpeg";
+
 export default {
   data() {
     return {
       destinations: [
-        { name: "Croatia", image: "/assets/images/city1.jpeg" },
-        { name: "Greece", image: "/assets/images/city2.jpeg" },
-        { name: "Spain", image: "/assets/images/city3.jpeg" },
-        { name: "Italy", image: "/assets/images/city4.jpeg" },
-        { name: "France", image: "/assets/images/city5.jpeg" },
-        { name: "Thailand", image: "/assets/images/city6.jpeg" },
+        { name: "Croatia", image: image1 },
+        { name: "Greece", image:image2 },
+        { name: "Spain", image: image3 },
+        { name: "Italy", image: image4 },
+        { name: "France", image: image5 },
+        { name: "Thailand", image: image6 },
       ],
     };
   },
