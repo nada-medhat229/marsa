@@ -28,12 +28,12 @@ export default {
   data() {
     return {
       destinations: [
-        { name: "Croatia", image: "src/assets/images/city1.jpeg" },
-        { name: "Greece", image: "src/assets/images/city2.jpeg" },
-        { name: "Spain", image: "src/assets/images/city3.jpeg" },
-        { name: "Italy", image: "src/assets/images/city4.jpeg" },
-        { name: "France", image: "src/assets/images/city5.jpeg" },
-        { name: "Thailand", image: "src/assets/images/city6.jpeg" },
+        { name: "Croatia", image: "@/assets/images/city1.jpeg" },
+        { name: "Greece", image: "@/assets/images/city2.jpeg" },
+        { name: "Spain", image: "@/assets/images/city3.jpeg" },
+        { name: "Italy", image: "@/assets/images/city4.jpeg" },
+        { name: "France", image: "@/assets/images/city5.jpeg" },
+        { name: "Thailand", image: "@/assets/images/city6.jpeg" },
       ],
     };
   },
