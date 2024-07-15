@@ -35,12 +35,12 @@ export default {
   data() {
     return {
       destinations: [
-        { name: "Croatia", image: image1 },
-        { name: "Greece", image:image2 },
-        { name: "Spain", image: image3 },
-        { name: "Italy", image: image4 },
-        { name: "France", image: image5 },
-        { name: "Thailand", image: image6 },
+        { name: "el gouna", image: image1 },
+        { name: "sharm el sheikh", image:image2 },
+        { name: "el sokhna", image: image3 },
+        { name: "northcoast", image: image4 },
+        { name: "alexandria", image: image5 },
+        { name: "somabay", image: image6 },
       ],
     };
   },
