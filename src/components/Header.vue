@@ -27,8 +27,9 @@
   </v-carousel>
 </template>
 <script>
-import image from "../assets/images/yah.jpg";
-import yaht from "../assets/images/yaht.jpg";
+import sifari from "../assets/images/yah.jpg";
+import image from "../assets/images/yaht.jpg";
+import fishing from "../assets/images/fishing.jpg";
 
   export default {
     data () {
@@ -41,10 +42,9 @@ import yaht from "../assets/images/yaht.jpg";
           'deep-purple accent-4',
         ],
         slides: [
-          {image:image,text: 'destination'},
-          {image:yaht,text: 'ss'},
-          {image:image,text: 'th'},
-          {image:yaht,text: 'fo'},
+          {image:image,text: 'diving'},
+          {image:sifari,text: 'sifari'},
+          {image:fishing,text: 'fishing'},
          
      
         ],
