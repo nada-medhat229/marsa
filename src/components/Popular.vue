@@ -28,8 +28,8 @@ import image1 from "../assets/images/elgouna.jpg";
 import image2 from "../assets/images/sharm.jpg";
 import image3 from "../assets/images/sokhna.png";
 import image4 from "../assets/images/northcoast.png";
-import image5 from "../assets/images/Alex.png";
-import image6 from "../assets/images/hurghada.png";
+import image5 from "../assets/images/Alex.jpg";
+import image6 from "../assets/images/hurghada.jpg";
 
 export default {
   data() {
