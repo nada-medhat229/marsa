@@ -51,6 +51,6 @@ export default {
 .headline {
   font-size: 24px;
   font-weight: bold;
-  text-transform: uppercase;
+  text-transform: capitalize;
 }
 </style>
