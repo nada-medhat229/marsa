@@ -24,23 +24,23 @@
 </template>
 
 <script>
-import image1 from "../assets/images/cit.jpg";
-import image2 from "../assets/images/city2.jpeg";
-import image3 from "../assets/images/city3.jpeg";
-import image4 from "../assets/images/city4.jpeg";
-import image5 from "../assets/images/city5.jpeg";
-import image6 from "../assets/images/city6.jpeg";
+import image1 from "../assets/images/elgouna.jpg";
+import image2 from "../assets/images/sharm.jpg";
+import image3 from "../assets/images/sokhna.png";
+import image4 from "../assets/images/northcoast.png";
+import image5 from "../assets/images/Alex.png";
+import image6 from "../assets/images/hurghada.png";
 
 export default {
   data() {
     return {
       destinations: [
-        { name: "el gouna", image: image1 },
-        { name: "sharm el sheikh", image:image2 },
-        { name: "el sokhna", image: image3 },
-        { name: "northcoast", image: image4 },
-        { name: "alexandria", image: image5 },
-        { name: "somabay", image: image6 },
+        { name: "Gouna", image: image1 },
+        { name: "Sharm el sheikh", image:image2 },
+        { name: "Ain el sokhna", image: image3 },
+        { name: "North coast", image: image4 },
+        { name: "Alexandria", image: image5 },
+        { name: "Hurghada", image: image6 },
       ],
     };
   },
