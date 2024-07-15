@@ -43,7 +43,7 @@ import fishing from "../assets/images/fishing.jpg";
         ],
         slides: [
           {image:image,text: 'diving'},
-          {image:sifari,text: 'sifari'},
+          {image:sifari,text: 'safari'},
           {image:fishing,text: 'fishing'},
          
      

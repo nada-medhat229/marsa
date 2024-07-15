@@ -12,7 +12,7 @@
         :key="index"
       >
         <v-card>
-          <v-img :src="destination.image" height="200px" cover>
+          <v-img :src="destination.image" height="200px" cover class="imgscale opacity-90 ">
             <v-row class="fill-height ma-0" align="center" justify="center">
               <div class="text-white headline ">{{ destination.name }}</div>
             </v-row>
@@ -52,5 +52,11 @@ export default {
   font-size: 24px;
   font-weight: bold;
   text-transform: capitalize;
+}
+.imgscale:hover{
+  opacity: 1 !important;
+  transform: scale(1.2);
+  transition: all .5s;
+  cursor: pointer;
 }
 </style>
