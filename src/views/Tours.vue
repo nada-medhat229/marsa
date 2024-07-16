@@ -99,7 +99,7 @@ onBeforeMount(() => {
           <v-col
             cols="12"
             sm="6"
-            md="3"
+            md="4"
             v-for="(trip, index) in tourStore.filteredTours"
             :key="index"
           >
@@ -113,8 +113,15 @@ onBeforeMount(() => {
                 </v-row>
               </v-img>
               <v-card-title>{{ trip.title }}</v-card-title>
-              <v-card-subtitle>{{ trip.duration }}</v-card-subtitle>
-              <v-card-subtitle>{{ trip.description }}</v-card-subtitle>
+              
+              <v-chip class="mx-1 px-3" variant="outlined" color="#BDBDBD" v-for="(item, i) in trip.icons" :key="i" style="margin: 0 2px;">
+            <v-icon left class="pe-2">{{ item.name }}</v-icon>
+            <p style="color: #000;">
+              {{ item.text }}
+            </p>
+          </v-chip>  
+              <v-card-subtitle class="pt-2">{{ trip.duration }}</v-card-subtitle>
+              <v-card-subtitle class="py-1">{{ trip.description }}</v-card-subtitle>
               <v-card-actions class="actionbtn mt-2">
                 <v-btn block @click="detail(trip.id)">Book Now</v-btn>
               </v-card-actions>

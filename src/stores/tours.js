@@ -13,9 +13,19 @@ export const useTourStore = defineStore('tourStore',{
                 title:'Tour 1',
                 imgUrl:image1,
                 category:'c1',
-                duration:6,
+                duration:'12 people • 400 hp • 8.5 m',
                 destinations:['Snorkeling', 'Sunset viewing'],
                 pricePerPerson:100,
+                icons: [
+                    {
+                      name: "mdi-account-tie-hat",
+                      text: "Skipper optional"
+                    },
+                    {
+                      name: "mdi-seal",
+                      text: "super owner"
+                    }
+                  ],
                 description:'Whether you are a couple that wants an exclusive, romantic day at sea or a group of friends that want to enjoy a day exploring the Riviera Maya coast, swimming, snorkeling, or celebrating a special occasion, this yacht is a perfect choice.'
             },
             {
@@ -23,9 +33,19 @@ export const useTourStore = defineStore('tourStore',{
                 title:'Tour 2',
                 imgUrl:image2,
                 category:'c2',
-                duration:6,
+                duration:'12 people • 400 hp • 8.5 m',
                 destinations:['Sunset viewing'],
                 pricePerPerson:50,
+                icons: [
+                    {
+                      name: "mdi-account-tie-hat",
+                      text: "Skipper optional"
+                    },
+                    {
+                      name: "mdi-seal",
+                      text: "super owner"
+                    }
+                  ],
                 description:'Whether you are a couple that wants an exclusive, romantic day at sea or a group of friends that want to enjoy a day exploring the Riviera Maya coast, swimming, snorkeling, or celebrating a special occasion, this yacht is a perfect choice.'
             },
             {
@@ -33,9 +53,19 @@ export const useTourStore = defineStore('tourStore',{
                 title:'Tour 3',
                 imgUrl:image3,
                 category:'c1',
-                duration:6,
+                duration:'12 people • 400 hp • 8.5 m',
                 destinations:['Snorkeling', 'Sunset viewing'],
                 pricePerPerson:100,
+                icons: [
+                    {
+                      name: "mdi-account-tie-hat",
+                      text: "Skipper optional"
+                    },
+                    {
+                      name: "mdi-seal",
+                      text: "super owner"
+                    }
+                  ],
                 description:'Whether you are a couple that wants an exclusive, romantic day at sea or a group of friends that want to enjoy a day exploring the Riviera Maya coast, swimming, snorkeling, or celebrating a special occasion, this yacht is a perfect choice.'
             },
             {
@@ -43,9 +73,19 @@ export const useTourStore = defineStore('tourStore',{
                 title:'Tour 4',
                 imgUrl:image4,
                 category:'c3',
-                duration:6,
+                duration:'12 people • 400 hp • 8.5 m',
                 destinations:['Snorkeling', 'Sunset viewing', 'Skardu'],
                 pricePerPerson:80,
+                icons: [
+                    {
+                      name: "mdi-account-tie-hat",
+                      text: "Skipper optional"
+                    },
+                    {
+                      name: "mdi-seal",
+                      text: "super owner"
+                    }
+                  ],
                 description:'Whether you are a couple that wants an exclusive, romantic day at sea or a group of friends that want to enjoy a day exploring the Riviera Maya coast, swimming, snorkeling, or celebrating a special occasion, this yacht is a perfect choice.'
 
             },
@@ -54,9 +94,19 @@ export const useTourStore = defineStore('tourStore',{
                 title:'Tour 5',
                 imgUrl:image1,
                 category:'c1',
-                duration:6,
+                duration:'12 people • 400 hp • 8.5 m',
                 destinations:['Snorkeling', 'Sunset viewing'],
                 pricePerPerson:1000,
+                icons: [
+                    {
+                      name: "mdi-account-tie-hat",
+                      text: "Skipper optional"
+                    },
+                    {
+                      name: "mdi-seal",
+                      text: "super owner"
+                    }
+                  ],
                 description:'Whether you are a couple that wants an exclusive, romantic day at sea or a group of friends that want to enjoy a day exploring the Riviera Maya coast, swimming, snorkeling, or celebrating a special occasion, this yacht is a perfect choice.'
 
             },
