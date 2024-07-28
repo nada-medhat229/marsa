@@ -38,9 +38,9 @@ onBeforeUnmount(() => {
   <li class="nav-item"><router-link to="/tours">Tours</router-link></li>
   <li class="nav-item"><router-link to="/about">About</router-link></li>
   <li class="nav-item"><router-link to="/contactus">Contact us</router-link></li>                
-  <ul class="buttons">
+  <!-- <ul class="buttons">
     <li class="nav-item"><router-link to="/login">Login</router-link></li>                
-  </ul>
+  </ul> -->
 </ul>
 </v-row>
     </v-container>
