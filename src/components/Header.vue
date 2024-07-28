@@ -1,7 +1,7 @@
 <template>
   
   <v-carousel
-    height="650"
+    height="675"
     :show-arrows="false"
     cycle
     hide-delimiters
@@ -54,7 +54,7 @@ import fishing from "../assets/images/fishing.jpg";
 </script>
 <style lang="scss" scoped>
 .carouselmargin{
-  margin-top: -90px;
+  // margin-top: -40px;
 }
 .textheader_pos {
   position: absolute;
