@@ -80,5 +80,9 @@ import fishing from "../assets/images/fishing.jpg";
   .carouselmargin{
     height: 280px !important;
   }
+  .textheader_pos {
+    bottom: 25%;
+    
+}
 }
 </style>
