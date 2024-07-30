@@ -11,7 +11,7 @@
         v-for="(destination, index) in destinations"
         :key="index"
       >
-        <v-card>
+        <v-card @click="goto">
           <v-img :src="destination.image" height="200px" cover class="imgscale opacity-90 ">
             <v-row class="fill-height ma-0" align="center" justify="center">
               <div class="text-white headline ">{{ destination.name }}</div>
@@ -23,7 +23,8 @@
   </v-container>
 </template>
 
-<script>
+<script setup>
+import { useRouter } from 'vue-router';
 import image1 from "../assets/images/elgouna.jpg";
 import image2 from "../assets/images/sharm.jpg";
 import image3 from "../assets/images/sokhna.png";
@@ -31,21 +32,22 @@ import image4 from "../assets/images/northcoast.png";
 import image5 from "../assets/images/Alex.jpg";
 import image6 from "../assets/images/hurghada.jpg";
 
-export default {
-  data() {
-    return {
-      destinations: [
-        { name: "Gouna", image: image1 },
-        { name: "Sharm el sheikh", image:image2 },
-        { name: "Ain el sokhna", image: image3 },
-        { name: "North coast", image: image4 },
-        { name: "Alexandria", image: image5 },
-        { name: "Hurghada", image: image6 },
-      ],
-    };
-  },
-};
+const router = useRouter();
+
+function goto() {
+  router.push('/tours');
+}
+
+const destinations = [
+  { name: "Gouna", image: image1 },
+  { name: "Sharm el sheikh", image: image2 },
+  { name: "Ain el sokhna", image: image3 },
+  { name: "North coast", image: image4 },
+  { name: "Alexandria", image: image5 },
+  { name: "Hurghada", image: image6 },
+];
 </script>
+
 
 <style>
 .headline {
