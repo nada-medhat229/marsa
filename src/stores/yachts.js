@@ -1,4 +1,9 @@
 import { defineStore } from 'pinia'
+import image1 from "../assets/images/yah.jpg";
+import image2 from "../assets/images/yah.png";
+import image3 from "../assets/images/yacht1.jpg";
+import image4 from "../assets/images/Alex.jpg";
+import image5 from "../assets/images/tour1.jpg";
 
 export const useYachtStore = defineStore('yachtStore',{
     state : ()=>({
@@ -17,7 +22,7 @@ export const useYachtStore = defineStore('yachtStore',{
             {
               name: "Seget Donji",
               type: "Motor",
-              image:'src/assets/images/yah.jpg',
+              image:image1,
               description: "Motor yacht Galeon 440 Fly 960hp (2024)",
               skipper: "Without skipper",
               people: 6,
@@ -29,7 +34,7 @@ export const useYachtStore = defineStore('yachtStore',{
             {
               name: "Seget Donji",
               type: "Motorboat",
-              image: 'src/assets/images/yah.png',
+              image: image2,
               description: "Motor yacht Beneteau Monte Carlo 52 870... (2022)",
               skipper: "Skipper optional",
               people: 7,
@@ -41,7 +46,7 @@ export const useYachtStore = defineStore('yachtStore',{
             {
               name: "Trogir",
               type: "RIB",
-              image: 'src/assets/images/yacht1.jpg',
+              image: image3,
               description: "Gulet Babac (1995)",
               skipper: "Skipper mandatory",
               people: 8,
@@ -53,7 +58,7 @@ export const useYachtStore = defineStore('yachtStore',{
             {
                 name: "Seget Donji",
                 type: "Jet ski",
-                image:'src/assets/images/Alex.jpg',
+                image:image4,
                 description: "Motor yacht Galeon 440 Fly 960hp (2024)",
                 skipper: "Without skipper",
                 people: 6,
@@ -65,7 +70,7 @@ export const useYachtStore = defineStore('yachtStore',{
               {
                 name: "Seget Donji",
                 type: "Houseboat",
-                image: 'src/assets/images/tour1.jpg',
+                image: image5,
                 description: "Motor yacht Beneteau Monte Carlo 52 870... (2022)",
                 skipper: "Skipper optional",
                 people: 7,
@@ -77,7 +82,7 @@ export const useYachtStore = defineStore('yachtStore',{
               {
                 name: "Trogir",
                 type: "Boat without licence",
-                image: 'src/assets/images/yah.jpg',
+                image: image1,
                 description: "Gulet Babac (1995)",
                 skipper: "Skipper mandatory",
                 people: 8,
@@ -89,7 +94,7 @@ export const useYachtStore = defineStore('yachtStore',{
               {
                 name: "Seget Donji",
                 type: "Motor yacht",
-                image:'src/assets/images/yah.png',
+                image:image2,
                 description: "Motor yacht Galeon 440 Fly 960hp (2024)",
                 skipper: "Without skipper",
                 people: 6,
@@ -101,7 +106,7 @@ export const useYachtStore = defineStore('yachtStore',{
               {
                 name: "Seget Donji",
                 type: "Motor",
-                image:'src/assets/images/yah.jpg',
+                image:image1,
                 description: "Motor yacht Galeon 440 Fly 960hp (2024)",
                 skipper: "Without skipper",
                 people: 6,
@@ -113,7 +118,7 @@ export const useYachtStore = defineStore('yachtStore',{
               {
                 name: "Seget Donji",
                 type: "Motorboat",
-                image: 'src/assets/images/yah.png',
+                image: image2,
                 description: "Motor yacht Beneteau Monte Carlo 52 870... (2022)",
                 skipper: "Skipper optional",
                 people: 7,
@@ -125,7 +130,7 @@ export const useYachtStore = defineStore('yachtStore',{
               {
                 name: "Trogir",
                 type: "RIB",
-                image: 'src/assets/images/yacht1.jpg',
+                image: image3,
                 description: "Gulet Babac (1995)",
                 skipper: "Skipper mandatory",
                 people: 8,
@@ -137,7 +142,7 @@ export const useYachtStore = defineStore('yachtStore',{
               {
                   name: "Seget Donji",
                   type: "Jet ski",
-                  image:'src/assets/images/Alex.jpg',
+                  image:image4,
                   description: "Motor yacht Galeon 440 Fly 960hp (2024)",
                   skipper: "Without skipper",
                   people: 6,
@@ -149,7 +154,7 @@ export const useYachtStore = defineStore('yachtStore',{
                 {
                   name: "Seget Donji",
                   type: "Houseboat",
-                  image: 'src/assets/images/tour1.jpg',
+                  image: image5,
                   description: "Motor yacht Beneteau Monte Carlo 52 870... (2022)",
                   skipper: "Skipper optional",
                   people: 7,
@@ -161,7 +166,7 @@ export const useYachtStore = defineStore('yachtStore',{
                 {
                   name: "Trogir",
                   type: "Boat without licence",
-                  image: 'src/assets/images/yah.jpg',
+                  image: image1,
                   description: "Gulet Babac (1995)",
                   skipper: "Skipper mandatory",
                   people: 8,
@@ -173,7 +178,7 @@ export const useYachtStore = defineStore('yachtStore',{
                 {
                   name: "Seget Donji",
                   type: "Motor yacht",
-                  image:'src/assets/images/yah.png',
+                  image:image2,
                   description: "Motor yacht Galeon 440 Fly 960hp (2024)",
                   skipper: "Without skipper",
                   people: 6,
