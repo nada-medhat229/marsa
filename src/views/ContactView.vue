@@ -1,83 +1,154 @@
 <script setup>
 import Header from "../components/Header.vue";
-import { ref } from 'vue';
-import {useRouter} from 'vue-router'
-const router = useRouter()
+import { ref } from "vue";
+import { useRouter } from "vue-router";
+const router = useRouter();
 
-const name = ref('');
-const email = ref('');
-const subject = ref('');
-const message = ref('');
+const name = ref("");
+const email = ref("");
+const subject = ref("");
+const message = ref("");
 
 const submitForm = () => {
-  router.push('/')
+  router.push("/");
 };
 </script>
 <template>
-    <main>
-        <Header/>
-        <div class="row wrapper">
-    
-          <form @submit.prevent="submitForm">
-            <h1 class="title">Get In Touch</h1>
-            <input type="text" id="username" v-model="name" required placeholder="Name">
-            <input type="email" id="email" v-model="email" required placeholder="Email">
-            <input type="text" id="subject" v-model="subject" required placeholder="Subject">
-            <textarea name="" id="message" cols="30" rows="10" placeholder="Message"></textarea>
-            <button type="submit">Send</button>
-          </form>
-        </div>
-    </main>
-  </template>
+  <section>
+    <Header />
+    <h2 class="main-heading">Contact Us</h2>
+    <v-container>
+      <v-row class="pt-5 mt-3">
+        <v-col cols="12" md="6">
+          <v-form>
+            <v-text-field
+              class="mb-4"
+              label="Your Name"
+              v-model="name"
+              variant="outlined"
+              required
+              hide-details="auto"
+            ></v-text-field>
+            <v-text-field
+              label="Your Email"
+              v-model="email"
+              variant="outlined"
+              required
+              type="email"
+              class="mb-4"
+              hide-details="auto"
+            ></v-text-field>
+            <v-text-field
+              label="Subject"
+              v-model="subject"
+              variant="outlined"
+              required
+              hide-details="auto"
+              class="mb-4"
+            ></v-text-field>
+            <v-textarea
+              label="Your Message"
+              v-model="message"
+              variant="outlined"
+              required
+              hide-details="auto"
+              class="mb-4"
+            ></v-textarea>
+            <v-card-actions>
+              <v-btn class="actionbtn" @click="submitForm">Send Message</v-btn>
+            </v-card-actions>
+          </v-form>
+        </v-col>
+        <v-col cols="12" md="6">
+          <h3>Contact Us</h3>
+          <p>
+            Nullam fermentum ullamcorper diam ut porta. Etiam ac ex vel velit
+            ullamcorper tempus. Mauris vel iaculis leo. Nulla facilisi. Morbi
+            vel velit mi. Donec vel felis felis.
+          </p>
+          <v-row class="py-5">
+            <v-col cols="12" md="6" class="d-flex">
+              <v-icon color="#00425adb">mdi-phone-outline</v-icon>
+              <div class="mx-1">
+                <strong>Call Us:</strong>
+                <p>+123 456 7890</p>
+              </div>
+            </v-col>
+            <v-col cols="12" md="6" class="d-flex">
+              <v-icon color="#00425adb">mdi-email-open-outline</v-icon>
+              <div class="mx-1">
+                <strong>Email Us:</strong>
+                <p>info@yourwebsite.com</p>
+              </div>
+            </v-col>
+            <v-col cols="12" md="6" class="d-flex">
+              <v-icon color="#00425adb">mdi-web</v-icon>
+              <div class="mx-1">
+                <strong>Website:</strong>
+                <p>www.yourwebsite.com</p>
+              </div>
+            </v-col>
+            <v-col cols="12" md="6" class="d-flex">
+              <v-icon color="#00425adb">mdi-map-marker-outline</v-icon>
+              <div class="mx-1">
+                <strong>Address:</strong>
+                <p>99 Roving St., Big City, NY 12345</p>
+              </div>
+            </v-col>
+          </v-row>
+
+          <div>
+            <h4>Follow Us On</h4>
+            <div class="d-flex">
+              <div class="icon">
+                <v-icon color="#fff">mdi-facebook</v-icon>
+              </div>
+              <div class="icon">
+                <v-icon color="#fff">mdi-twitter</v-icon>
+              </div>
+              <div class="icon">
+                <v-icon color="#fff">mdi-linkedin</v-icon>
+              </div>
+              <div class="icon">
+                <v-icon color="#fff">mdi-instagram</v-icon>
+              </div>
+            </div>
+          </div>
+        </v-col>
+      </v-row>
+    </v-container>
+  </section>
+</template>
 
 <style lang="scss" scoped>
-.wrapper{
-  min-height: 70vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 30px;
-
-  form{
-    width: 100%;
-    max-width: 600px;
-    background: #f3f3f3;
-    padding: 30px 40px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px #00000031;
-    .title{
-      color: #00425A;
-      margin-bottom: 20px;
-    }
-    textarea,
-    input{
-      font-size: 15px ;
-      padding: 10px;
-      margin-bottom: 15px;
-      border-radius: 10px;
-      border: none;
-      width: 100%;
-      box-shadow: 0 0 10px #00000031;
-    }
-    button{
-      border-radius: 30px;
-      font-size: 15px;
-      padding: 5px 15px;
-      margin: 5px;
-      width: 90px;      
-      text-align: center;
-      color: #fff;
-      background-color: #00425A;
-      border: none;
-      transition: all .3s;
-    }
-    button:hover{
-      box-shadow: 0 0 10px #00000031;
-      cursor: pointer;
-      transform: scale(1.1);
-
-    }
+.actionbtn {
+  background-color: #00425adb;
+  color: white;
+  padding: 0 15px;
+}
+.icon {
+  background-color: #00425adb;
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  margin: 0 5px;
+  i {
+    font-size: 20px;
   }
+}
+</style>
+<style>
+.v-field.v-field--focused .v-field__outline,
+.v-input.v-input--error .v-field__outline {
+  --v-field-border-opacity: 0.4 !important;
+}
+.main-heading {
+  width: 100%;
+  padding: 20px 0;
+  text-align: center;
+  background: #1f8a6f28;
+  color: #00425a;
 }
 </style>
