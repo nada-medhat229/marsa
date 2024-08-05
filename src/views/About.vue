@@ -17,7 +17,7 @@ onBeforeMount(() => {
           <v-img
             src="/src/assets/images/yacht1.jpg"
             alt="Online Tutoring"
-            style="max-height: 400px; max-width: 100%"
+            style="max-height: 400px; max-width: 100%;    border: 15px solid #dcede8;"
           ></v-img>
         </v-col>
         <v-col cols="12" md="6">
