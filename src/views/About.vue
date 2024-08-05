@@ -1,6 +1,7 @@
 <script setup>
 import Header from "../components/Header.vue";
 import { onBeforeMount } from "vue";
+import image from "/src/assets/images/yacht1.jpg";
 
 onBeforeMount(() => {
   window.scrollTo(0, 0);
@@ -15,7 +16,7 @@ onBeforeMount(() => {
       <v-row>
         <v-col cols="12" md="6">
           <v-img
-            src="/src/assets/images/yacht1.jpg"
+            :src="image"
             alt="Online Tutoring"
             style="max-height: 400px; max-width: 100%;    border: 15px solid #dcede8;"
           ></v-img>
