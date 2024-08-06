@@ -32,7 +32,7 @@ onBeforeUnmount(() => {
   <img src="../assets/images/menuu.png" alt=""  style="width: 45px;" class="menu" @click="showMenu = !showMenu" v-if="isScrolled">
   <img src="../assets/images/menu.png" alt="" class="menu" @click="showMenu = !showMenu" v-else>
 </h1>
-<ul class="nav d-flex justify-space-between" :class="showMenu ? '' : 'hide'" @click="showMenu = false">
+<ul class="nav d-flex " :class="showMenu ? '' : 'hide'" @click="showMenu = false">
   <li class="nav-item"><router-link to="/">Home</router-link></li>
   <li class="nav-item"><router-link to="/yachts">Yachts</router-link></li>
   <li class="nav-item"><router-link to="/tours">Tours</router-link></li>
